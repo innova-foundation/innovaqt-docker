@@ -1,11 +1,11 @@
-FROM ubuntu:20.04
+FROM ubuntu:21.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 MAINTAINER CircuitBreaker <sarris88p@gmail.com>
 
 RUN apt-get update && apt-get -y upgrade \
-&& apt-get install -y git unzip build-essential libssl-dev libgmp-dev libsecp256k1-dev libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev libevent-dev autogen automake libtool libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qt5-default libcurl4-openssl-dev \
+&& apt-get install -y git unzip build-essential libssl-dev libgmp-dev libsecp256k1-dev libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev libevent-dev autogen automake libtool libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libcurl4-openssl-dev \
 && apt-get -y install git
 
 
